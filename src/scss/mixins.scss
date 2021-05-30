@@ -1,0 +1,30 @@
+@mixin clearFix {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin mq($arg) {
+    @media screen and (max-width: $arg) {
+        @content;        
+    }
+}
+//@mixin mq-lg ($arg) {
+//    @media screen and (min-width: $arg) {
+//        @content;
+//    }
+//}
+
+@mixin mq-minmax ($arg, $arg2) {
+    @media screen and (min-width: $arg) and (max-width: $arg2){
+        @content;
+    }
+}
+
+@mixin pageHeading {
+    font-size: $headingXL;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px $taupe;
+}

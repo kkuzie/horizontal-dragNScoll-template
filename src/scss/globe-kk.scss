@@ -1,0 +1,92 @@
+@import "variables";
+@import "mixins";
+
+/* kk added */
+/* kk added to make bicolor page 80% */
+#maincontent {
+  width: 80%;//makes left side within #maincontent
+  /* height: 100vh; */
+  // background-color: $taupe;
+  //FIX change image to kk image not netrix
+    // background-image: url('https://res.cloudinary.com/netrix/image/upload/c_scale,f_auto,q_auto,w_1147,o_20/v1613585890/3.0/images-source/paper-texture.png');
+  margin: 0 auto;
+}
+
+//background refresh when sizing screen
+html.content-hidden {
+background-color: $copper;
+}
+
+
+//TO DO: FIX/replace image
+// .page-scroller > .scroll-content {
+//   background-image: url('https://res.cloudinary.com/netrix/image/upload/c_scale,f_auto,q_auto,w_1147,o_20/v1613585890/3.0/images-source/paper-texture.png');
+// }
+
+
+//TEST dragNscroll
+body{
+  font-family:sans-serif;
+  background:grey;
+  color:white;
+  
+}
+#dragSpace {
+  position:fixed;
+  width:10000px;
+  // height:300px;
+  // top:60px;
+  // background-color: transparent;
+  // background-color: $taupe;
+  // background-image: url('https://res.cloudinary.com/netrix/image/upload/c_scale,f_auto,q_auto,w_1147,o_20/v1613585890/3.0/images-source/paper-texture.png');
+  // left:-5000px;
+  // margin-top:10px;
+  overflow: hidden; //keeps within #maincontent
+  // height: 100vh;
+  width: 80%;//keeps within #maincontent
+}
+#wrapperBoxes{
+//   position: absolute;
+//   // width: 5000px;
+//   // height: 300px;
+//   left: 5000px;
+//  position: relative;
+//   top: 25%;
+
+//this makes the background drag with photos
+background-color: $taupe;
+background-image: url('https://res.cloudinary.com/netrix/image/upload/c_scale,f_auto,q_auto,w_1147,o_20/v1613585890/3.0/images-source/paper-texture.png');
+height: 100vh;
+
+  width: 10000px;
+  @include mq(992px){
+    width: 100%;
+  }
+}
+
+//need to make background scroll with images
+.scroll-content{
+  position: relative;
+  top: 25%;
+}
+// .box {
+//   position: relative;
+  // width: 300px;
+  // height: 220px;
+  // border-radius: 10px;
+  // margin: 40px 25px;
+  // background-color: #91e600;
+  // text-align: center;
+  // font-family: Asap, Avenir, Arial, sans-serif;
+  // font-size: 150px;
+  // font-weight:600;
+  // line-height: 220px;
+  // color: orange;
+//   float: left;
+// }
+
+  
+
+// label {
+//   font-size:20px;
+// }
