@@ -1,0 +1,53 @@
+{
+  "name": "netrix-clone-v1-kk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-sass": "^6.0.0",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "@barba/prefetch": "^2.1.10",
+    "@glidejs/glide": "^3.4.1",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "cloudinary-core": "^2.11.4",
+    "draggable": "^4.2.0",
+    "gsap": "^3.6.1",
+    "ieee754": "^1.2.1",
+    "imagesloaded": "^4.1.4",
+    "is-touch-device": "^1.0.1",
+    "jquery": "^3.6.0",
+    "lazysizes": "^5.3.2",
+    "lottie-web": "^5.7.8",
+    "node-libs-browser": "^2.2.1",
+    "process": "^0.11.10",
+    "rxjs": "^7.0.1",
+    "sal.js": "^0.8.5",
+    "smooth-scrollbar": "^8.6.2",
+    "smoothscroll-polyfill": "^0.4.4",
+    "vanilla-tilt": "^1.7.0"
+  }
+}
